@@ -1,0 +1,21 @@
+header {
+    background-color: var(--black);
+    color: var(--white);
+    margin: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.header_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_list {
+    display: flex;
+}
+
+.header_item {
+    margin: 0 1rem;
+}
