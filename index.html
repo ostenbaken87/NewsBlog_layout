@@ -7,32 +7,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="src/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="src/slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="src/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="wrapper">
     <header>
-        <div class="header_body container">
+        <div class="header_body">
             <div class="header_logo">
                 <i class="fa-solid fa-newspaper"></i>
-                <span>NewsBlock</span>
+                <span>NewsPortal</span>
             </div>
             <div class="header_nav">
                 <ul class="header_list">
-                    <li class="header_item">home</li>
-                    <li class="header_item">item1</li>
-                    <li class="header_item">item2</li>
-                    <li class="header_item">item3</li>
+                    <li class="header_item"><a href="#">item0</a></li>
+                    <li class="header_item"><a href="#">item1</a></li>
+                    <li class="header_item"><a href="#">item2</a></li>
+                    <li class="header_item"><a href="#">item3</a></li>
                 </ul>
+            </div>
+            <div class="header_enter">
+                <a href=""><i class="fa-solid fa-door-open"></i>logout</a>
+                <a href=""><i class="fa-solid fa-door-closed"></i>login</a>
             </div>
         </div>
     </header>
     <main>
-        main
+        <div class="main_page">
+            <div class="main_slider">
+                Slider
+            </div>
+            <div class="main_article">
+                Posts
+            </div>
+        </div>
+        <div class="main_sidebar">
+            Sidebar
+        </div>
+        <div class="main_popular">
+            Popular Articles
+        </div>
     </main>
     <footer>
         footer
     </footer>
 </div>
+<script src="src/jquery/jquery.min.js"></script>
+<script src="src/slick-1.8.1/slick-1.8.1/slick/slick.js"></script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    gap: 0.5rem;
+}
+
+.main_page {
+    background-color: var(--grafite);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.main_slider {
+
+}
+
+.main_article {
+
+}
+
+.main_sidebar {
+    background-color: var(--gray);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.main_popular {
+    background-color: var(--gray);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
