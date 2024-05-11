@@ -1,8 +1,9 @@
 .main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 480px 3fr 1fr;
+    grid-template-rows: 480px auto 1fr;
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .main_slider {
@@ -42,7 +43,7 @@
     box-shadow: var(--box-shadow);
 }
 
-.main_title {
+.main_title h1 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
@@ -51,6 +52,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    height: max-content;
 }
 
 .main_article {
@@ -58,7 +60,7 @@
     grid-template-rows: 250px 50px minmax(50px, auto);
     align-items: center;
     background: var(--white);
-    border-radius: 15px 15px 0 0;
+    border-radius: 10px;
     padding: 1rem;
 }
 
@@ -75,6 +77,7 @@
 
 .main_article_desc {
     align-self: start;
+    font-size: 0.9rem;
 }
 
 .main_sidebar {
@@ -82,6 +85,52 @@
     border-radius: var(--border-radius);
     padding: 1rem;
     box-shadow: var(--box-shadow);
+    height: max-content;
+}
+
+.main_sidebar_title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.main_sidebar_message {
+    background: var(--white);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.main_sidebar_message:last-child {
+    margin-bottom: 0;
+}
+
+.main_sidebar_img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main_sidebar_more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.main_sidebar_more i {
+    font-size: 1.5rem;
+}
+
+.main_sidebar_more a {
+    font-size: 1rem;
+    color: var(--black);
 }
 
 .main_popular {
@@ -90,6 +139,34 @@
     padding: 1rem;
     box-shadow: var(--box-shadow);
     grid-column: span 2;
+}
+
+.main_popular_title h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.main_popular_articles {
+    display: flex;
+}
+
+.main_popular_article {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+.main_popular_article:last-child {
+    margin-right: 0;
+}
+
+.main_popular_article_img img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
 }
 
 
